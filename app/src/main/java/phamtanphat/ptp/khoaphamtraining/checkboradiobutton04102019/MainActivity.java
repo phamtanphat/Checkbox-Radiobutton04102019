@@ -21,7 +21,25 @@ public class MainActivity extends AppCompatActivity {
         mCbAndroid.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-
+                if (!b) return;
+                mCbiOS.setChecked(false);
+                mCbPhp.setChecked(false);
+            }
+        });
+        mCbiOS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (!b) return;
+                mCbAndroid.setChecked(false);
+                mCbPhp.setChecked(false);
+            }
+        });
+        mCbPhp.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (!b) return;
+                mCbAndroid.setChecked(false);
+                mCbiOS.setChecked(false);
             }
         });
     }
