@@ -28,5 +28,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonJava"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:text="Java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioButtonKotlin"
+            android:textSize="20sp"
+            android:text="Kotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioButtonGroovy"
+            android:textSize="20sp"
+            android:text="Groovy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
 
 </LinearLayout>
